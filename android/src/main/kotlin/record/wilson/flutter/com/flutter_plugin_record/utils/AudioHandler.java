@@ -105,9 +105,9 @@ public final class AudioHandler extends Handler {
 
     public enum Frequency {
         F_44100(44100),
-        F_22050(22050),
+        F_24000(24000),
         F_16000(16000),
-        F_11025(11025),
+        F_12000(12000),
         F_8000(8000);
         private int f;
 
@@ -125,9 +125,9 @@ public final class AudioHandler extends Handler {
 
         private static final int[] FREQUENCY = {
                 44100,
-                22050,
+                24000,
                 16000,
-                11025,
+                12000,
                 8000
         };
         private final        int   mPriority;

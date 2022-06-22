@@ -269,15 +269,15 @@ class FlutterPluginRecordPlugin : FlutterPlugin, MethodCallHandler, ActivityAwar
                 audioHandler?.release()
                 audioHandler = null
             }
-            var frequencyType = AudioHandler.Frequency.F_22050
+            var frequencyType = AudioHandler.Frequency.F_24000
             if(type == 1){
                 frequencyType = AudioHandler.Frequency.F_44100
             }else if(type == 2){
-                frequencyType = AudioHandler.Frequency.F_22050
+                frequencyType = AudioHandler.Frequency.F_24000
             }else if(type == 3){
                 frequencyType = AudioHandler.Frequency.F_16000
             }else if(type == 4){
-                frequencyType = AudioHandler.Frequency.F_11025
+                frequencyType = AudioHandler.Frequency.F_12000
             }else if(type == 5){
                 frequencyType = AudioHandler.Frequency.F_8000
             }
