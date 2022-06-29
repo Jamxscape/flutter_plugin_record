@@ -108,7 +108,7 @@ public final class AudioHandler extends Handler {
         F_24000(24000),
         F_16000(16000),
         F_12000(12000),
-        F_8000(800);
+        F_8000(8000);
         private int f;
 
         private Frequency(int f) {
@@ -128,7 +128,7 @@ public final class AudioHandler extends Handler {
                 24000,
                 16000,
                 12000,
-                800
+                8000
         };
         private final        int   mPriority;
 
