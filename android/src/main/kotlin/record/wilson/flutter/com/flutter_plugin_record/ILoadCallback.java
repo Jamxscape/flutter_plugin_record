@@ -1,4 +1,4 @@
-package cafe.adriel.androidaudioconverter.callback;
+package record.wilson.flutter.com.flutter_plugin_record;
 
 public interface ILoadCallback {
     

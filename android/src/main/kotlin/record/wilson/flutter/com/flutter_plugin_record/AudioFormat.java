@@ -1,4 +1,4 @@
-package cafe.adriel.androidaudioconverter.model;
+package record.wilson.flutter.com.flutter_plugin_record;
 
 public enum AudioFormat {
     AAC,

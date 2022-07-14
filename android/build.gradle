@@ -36,6 +36,14 @@ android {
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'src/libs'
+        }
     }
     defaultConfig {
         minSdkVersion 19
@@ -50,5 +58,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.github.shaoshuai904:RecordWav:1.0.2'
     implementation "androidx.appcompat:appcompat:1.0.0"
-    implementation 'com.github.jamxscape:AndroidAudioConverter:0.0.8'
+    implementation(name: 'ffmpeg-android-java-2a627f6ecd', ext: 'aar')
 }
